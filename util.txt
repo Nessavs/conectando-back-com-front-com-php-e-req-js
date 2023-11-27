@@ -16,3 +16,9 @@ que a mensagem de contato seja gravada no banco de dados.
 Página Principal
 - Catálogo de serviços com foto, preço e opção para solicitar orçamento, podem ser carregados de uma tabela de
 serviços no banco de dados
+
+----------------------------------------------------------------------
+http://localhost/penteadospt2/penteadosSiteCompleted/
+http://localhost/penteadospt2/penteadosSiteCompleted/back
+----------------------------------------------------------------------
+utilizar o xamp e inicializar o apache, mysql, e deixar o projeto na pasta do xampp dentro de htdocs.
