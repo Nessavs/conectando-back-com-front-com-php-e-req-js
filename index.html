@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Nessa's Hair</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="app.js"></script>
+  
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+    body {
+      position: relative;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="iniciar()">
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Catálogo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Sobre o salão</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Contato</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Depoimentos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.png" alt="Hair">
+    </div>
+    <div class="carousel-item">
+      <img src="2.png" alt="hair1">
+    </div>
+    <div class="carousel-item">
+      <img src="3.png" alt="hair2">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- Seção de Serviços -->
+<div id="section1" class="container-fluid" style="padding-top:70px;padding-bottom:70px; background-color: #E0727D;">
+  <h1 class="text-center">Catálogo de Serviços</h1>
+  <div class="container mt-5">
+    <div class="row" id="servicos-container">
+      <!-- Aqui é onde os serviços serão exibidos puxados do js -->
+    </div>
+
+    <!-- Script para obter e exibir os serviços ao carregar a página -->
+    <script src="./back/obter_servicos.php"></script>
+  </div>
+</div>
+
+<div id="section2" class="container-fluid" style="padding-top:100px;padding-bottom:100px; background-color: #D5D5D5;">
+  <h1 class="text-center">Sobre nós</h1>
+  <!-- Seção da Empresa -->
+  <div class="container mt-5">
+    <h1>Nessa's Salon</h1>
+    <p>
+        Desde 2012 renovando visuais! Nossa equipe dedicada está comprometida em realçar a sua beleza natural e promover o seu bem-estar. Venha nos visitar e descubra como podemos transformar seus cabelos e cuidados de beleza em uma experiência única e rejuvenescedora. Sua beleza, sua autenticidade, seu bem-estar - tudo isso é celebrado aqui.
+    </p>
+    
+    <!-- Endereço da Empresa -->
+    <h2>Endereço</h2>
+    <p>
+      Rua: Aquela rua ali, 123<br>
+      Bairro: Bairro Seminário<br>
+      CEP: 12345-678<br>
+      Cidade: Chapecó<br>
+      Estado: Santa Catarina
+    </p>
+    
+    <!-- Incorporação do Google Maps -->
+    <h2>Localização no Mapa</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.6914071447295!2d-52.60399842602393!3d-27.13452815058549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6a18142c0a3%3A0x8b11ef4e1a2c80bd!2sUnoesc%20Chapec%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1694139505504!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+</div>
+
+<div id="section3" class="container-fluid" style="padding-top:70px;padding-bottom:70px; background-color: #E0727D;">
+  <h1 class="text-center">Contato</h1>
+  <!-- Seção de Contato -->
+  <div class="container mt-5">
+    <h1 class="text-center">Estamos aqui para lhe atender</h1>
+    <p class="text-center">Use o formulário abaixo para entrar em contato conosco.</p>
+
+    <!-- Formulário de Contato -->
+    <form id="formularioContato" action="./back/salvar_contato.php" method="POST">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem"></textarea>
+      </div>
+      <!-- Botão de enviar com ID 'enviarContato' -->
+      <button type="submit" class="btn btn-custom">Enviar</button>
+    </form>
+  </div>
+</div>
+
+
+
+    <!-- Informações de Contato -->
+
+    <div class="mt-5">
+      <h2 class="text-center">Informações de Contato</h2>
+      <p>Nessa's Salon</p>
+      <p>E-mail: contato@nessassalon.com</p>
+      <p>Telefone: (49) 0000-0000</p>
+      <p>Whatsapp: (49) 0000-0000</p>
+      <p>Redes Sociais:</p>
+      <a href="https://www.facebook.com/unoesc.chapeco" class="btn btn-custom">Facebook</a>
+      <a href="https://www.instagram.com/ne.ssas/" class="btn btn-custom">Instagram</a>
+      <a href="https://twitter.com/unoesc" class="btn btn-custom">Twitter</a>
+    </div>
+</div>
+
+
+<!-- Seção de Depoimentos -->
+<div id="section4" class="container-fluid" style="padding-top:50px;padding-bottom:50px; background-color: #E0727D;">
+  <h1 class="text-center">Depoimentos</h1>
+
+  <!-- Depoimentos existentes -->
+  <div id="depoimentosContainer" class="container mt-5">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        iniciar();
+      });
+    </script>
+  </div>
+    
+  </div>
+  
+
+<!-- Formulário para enviar novos depoimentos -->
+<div id="novoDepoimentoContainer" class="container mt-5">
+  <h2 class="text-center">Adicione um Novo Depoimento</h2>
+  <form id="novoDepoimentoForm" action="./back/salvar_depoimento.php" method="post">
+    <div class="form-group">
+      <label for="imagem_url">URL da Imagem</label>
+      <input type="text" class="form-control" id="imagem_url" name="imagem_url" placeholder="URL da Imagem" required>
+    </div>
+    <div class="form-group">
+      <label for="mensagem">Mensagem</label>
+      <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Seu Depoimento" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="autor">Autor</label>
+      <input type="text" class="form-control" id="autor" name="autor" placeholder="Seu Nome" required>
+    </div>
+    <button type="submit" class="btn btn-custom">Enviar Depoimento</button>
+  </form>
+</div>
+
+
+
+  <!-- Link para Iniciar Conversa pelo WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=5549991861529" target="_blank" class="btn btn-primary btn-lg btn-block mt-4">
+    <img src="wpp.png" alt="WhatsApp" width="50" height="50"> Iniciar Conversa pelo WhatsApp
+  </a>
+
+<footer class="mt-5 text-center">
+    Desenvolvido por Vanessa da Silva, matéria de Desenvolvimento WEB, UNOESC CHAPECÓ Semestre 2 &copy; 2023
+  </footer>
+</body>
+</html>

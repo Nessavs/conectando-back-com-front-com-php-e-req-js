@@ -1,0 +1,23 @@
+.btn-custom {
+    background-color: black; /* Cor de fundo personalizada */
+    border-color: #E0727D; /* Cor da borda personalizada */
+    color: #fff; /* Cor do texto personalizada */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada */
+    text-decoration: none; /* Remover sublinhado (se for um link) */
+    font-weight: bold; /* Peso da fonte em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease-in-out; /* Transição suave da cor de fundo */
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff5a5f; /* Cor de fundo personalizada ao passar o mouse */
+    border-color: #ff5a5f; /* Cor da borda personalizada ao passar o mouse */
+  }
+  
+/* Estilo para o vídeo - ajuste o tamanho conforme necessário */
+.video-container {
+  max-width: 440px; /* Largura máxima do vídeo */
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+

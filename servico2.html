@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabelo Iluminado com Brilho Natural</title>
+  <!-- Inclua os arquivos CSS e JavaScript do Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Menu Principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Página Inicial</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#section1">Catálogo de Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Dados do Serviço -->
+    <div class="mt-4">
+      <h1>Cabelo Iluminado com Brilho Natural:</h1>
+      <p>Preço: R$300,00</p>
+      <p>Tempo para Realizar o Serviço: 3 horas</p>
+      <p>Dias de Atendimento: Segunda a Sexta</p>
+      <p>Horários de Atendimento: 9h às 17h</p>
+      <p>Informações Adicionais: Horários especiais para feriados, finais de semana e eventos importantes.</p>
+    </div>
+    
+    <!-- Fotos do Serviço -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <img src="front/img/i1.jpg" alt="Foto 1" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <img src="front/img/i2.jpg" alt="Foto 2" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Vídeo do YouTube -->
+    <div class="mt-4 mb-4">
+        <h2>Vídeo de Demonstração</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QAeFbY0vf1c" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Botão para abrir o modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Solicite um orçamento</button>
+
+
+  <!-- Modal de Orçamento -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulário de Orçamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulário de Orçamento -->
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf" placeholder="Seu Estado">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="data">Data desejada para a realização do serviço</label>
+              <input type="date" class="form-control" id="data">
+            </div>
+            <div class="form-group">
+              <label for="observacoes">Observações</label>
+              <textarea class="form-control" id="observacoes" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer class="mt-5 text-center">
+    Desenvolvido por Vanessa da Silva, matéria de Desenvolvimento WEB, UNOESC CHAPECÓ Semestre 2 &copy; 2023
+  </footer>
+</body>
+</html>
